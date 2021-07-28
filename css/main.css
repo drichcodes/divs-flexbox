@@ -95,9 +95,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+    --clr-bg-main: rgba(20, 33, 61, 1);
+    --clr-bg-accent :rgba(252, 163, 17, 1);
+    --clr-text-main :rgba(229, 229, 229, 0.746);
+    --clr-text-accent :rgba(255, 255, 255, 1);
+}
 
 html {
-  background-color: #fff;
+  background-color: var(--clr-bg-main);
   height: 100%;
 }
 
@@ -116,16 +122,18 @@ body {
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: var(--clr-bg-accent);
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
   height: 300px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.div-1, .div-2 {
+    border-right: 1px solid gray;
 }
 
 
