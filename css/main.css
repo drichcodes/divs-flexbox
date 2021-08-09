@@ -96,14 +96,15 @@ textarea {
    ========================================================================== */
 
 :root {
-    --clr-bg-main: rgba(20, 33, 61, 1);
-    --clr-bg-accent :rgba(252, 163, 17, 1);
+    --clr-bg-main: rgb(6, 43, 124);
+    --clr-bg-accent :rgb(230, 145, 10);
     --clr-text-main :rgba(229, 229, 229, 0.746);
     --clr-text-accent :rgba(255, 255, 255, 1);
 }
 
 html {
   background-color: var(--clr-bg-main);
+  color: var(--clr-bg-accent);
   height: 100%;
 }
 
@@ -114,31 +115,50 @@ body {
   height: 100%;
 }
 
+header {
+    font-size: 2.5rem;
+}
+
+#info {
+    font-size: 2rem;
+}
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-1, .div-2, .div-3 {
-  color: var(--clr-bg-accent);
-  line-height: 1.5em;
-  font-size: 1.6em;
-  height: 300px;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6px;
+    text-align: center;
 }
 
 .div-1, .div-2 {
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--clr-bg-accent);
 }
 
+.wrapper p {
+    max-width: 90%;
+}
 
+footer {
+    display: flex;
+    justify-content: center;
+}
 
+footer ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
+ul li {
+    padding: 0 20px;
+    list-style: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
